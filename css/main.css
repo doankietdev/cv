@@ -5426,13 +5426,8 @@ Created using IcoMoon - icomoon.io
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
   }
   .sidebar-collapse .navbar-collapse:before {
-    background: #378c3f;
-    /* For browsers that do not support gradients */
-    /* For Safari 5.1 to 6.0 */
-    /* For Opera 11.1 to 12.0 */
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#378c3f 0%, #000 80%);
-    /* Standard syntax (must be last) */
+    background: var(---primary-color);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
     opacity: 0.76;
     filter: alpha(opacity=76);
     display: block;
