@@ -1,3 +1,55 @@
+:root {
+  ---primary-color: #00AF9C;
+}
+
+/*! nouislider - 9.1.0 - 2016-12-10 16:00:32 */
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+
+/* Painting and performance;
+ * Browsers can paint handles in their own layer.
+ */
+
+/* Slider size and handle placement;
+ */
+
+/* Styling;
+ */
+
+/* Handles and cursors;
+ */
+
+/* Disabled state;
+ */
+
+/* Base;
+ *
+ */
+
+/* Values;
+ *
+ */
+
+/* Markings;
+ *
+ */
+
+/* Horizontal layout;
+ *
+ */
+
+/* Vertical layout;
+ *
+ */
+
+/*!
+ * Datepicker for Bootstrap v1.7.0-dev (https://github.com/uxsolutions/bootstrap-datepicker)
+ *
+ * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
+ */
+
 .btn {
   border-width: 2px;
   font-weight: 400;
@@ -72,8 +124,53 @@
   padding: 15px 48px;
 }
 
+.progress-container {
+  position: relative;
+}
+.progress-container .progress-badge {
+  font-size: 0.8571em;
+}
+
+/*           badges             */
+
 button {
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+a {
+  color: #333;
+  transition-duration: 0.2s;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: var(---primary-color);
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 12px;
+}
+
+.h4 {
+  font-size: 1.714em;
+  line-height: 1.45em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.h5 {
+  font-size: 1.57em;
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.61em;
 }
 
 .title {
@@ -86,6 +183,12 @@ body {
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Animations */
+.nav-item .nav-link,
+.navbar {
+  transition: all 300ms ease 0s;
 }
 
 .navbar {
@@ -102,7 +205,8 @@ body {
   color: #ffffff;
 }
 .navbar .navbar-nav .nav-link:not(.btn) {
-  font-size: 0.8142em;
+  text-transform: uppercase;
+  font-size: 0.7142em;
   padding: 0.5rem 0.7rem;
   line-height: 1.625rem;
 }
@@ -139,6 +243,55 @@ body {
   background-color: var(---primary-color) !important;
 }
 
+img {
+  max-width: 100%;
+  border-radius: 1px;
+}
+
+/* --------------------------------
+
+Nucleo Outline Web Font - nucleoapp.com/
+License - nucleoapp.com/license/
+Created using IcoMoon - icomoon.io
+
+-------------------------------- */
+@font-face {
+  font-family: 'Nucleo Outline';
+  src: url('../fonts/nucleo-outline.eot');
+  src: url('../fonts/nucleo-outline.eot') format('embedded-opentype'),
+    url('../fonts/nucleo-outline.woff2') format('woff2'),
+    url('../fonts/nucleo-outline.woff') format('woff'),
+    url('../fonts/nucleo-outline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+/*------------------------
+  change icon size
+-------------------------*/
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+
+/*------------------------
+  list icons
+-------------------------*/
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+/*------------------------
+	font icons
+-------------------------*/
+
 .card {
   border: 0;
   border-radius: 0.1875rem;
@@ -150,6 +303,7 @@ body {
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 }
 .card .card-body {
+  min-height: 190px;
   font-size: 16px;
 }
 
@@ -227,6 +381,10 @@ body {
 }
 .page-header .container {
   z-index: 2;
+}
+[data-background-color] .radio input[type='radio']:not(:disabled):hover + label::after {
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 @media screen and (max-width: 991px) {
@@ -531,6 +689,8 @@ body {
   }
 }
 
+/* Images Gallery Style*/
+
 /* Header */
 /* Navbar style*/
 .navbar {
@@ -646,6 +806,7 @@ body {
 }
 
 .cc-education .cc-education-header {
+  padding-top: 60px;
   padding-right: 0;
   text-align: center;
   color: #fff;
@@ -1045,6 +1206,7 @@ path#f3-l9 {
   -webkit-transform: rotateX(-37deg) rotateY(-46deg) rotateZ(-23deg) translateX(8px) translateY(20px) translateZ(-50px);
           transform: rotateX(-37deg) rotateY(-46deg) rotateZ(-23deg) translateX(8px) translateY(20px) translateZ(-50px);
 }
+
 
 /* Image Modal */
 .modal-target {
